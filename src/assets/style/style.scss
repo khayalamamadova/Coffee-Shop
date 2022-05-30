@@ -1,0 +1,105 @@
+body{
+    overflow-x: hidden;
+}
+
+
+nav{
+    background-color:#4F2916;
+
+    .logo{
+        border-left: dashed #FFFFFF;
+        border-right: dashed #FFFFFF;
+        padding: 1em 5em;
+
+    }
+
+}
+
+
+#hero__one{
+    
+    .carousel-caption{
+        width: 100vh;
+        margin-left: 30px;
+        transform: translate(-200px, -200px);
+        h1{
+            font-size: 5em;
+            transition: all 1.5s ease-in-out;
+            animation-name: text_move;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: both;
+        }
+        p{
+            font-size: 1.2rem;
+            transition: all 1.5s ease-in-out;
+            animation-name: text_move;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: both;
+
+        }
+        .btn{
+            transition: all 1.5s ease-in-out;
+            animation-name: moving;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: both;
+        }
+    }
+}
+
+
+@keyframes moving {
+    0%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(-15px);
+    }
+    
+}
+
+@keyframes text_move {
+    0%{
+        opacity: -1;
+        transform: translateX(0px);
+    }
+    100%{
+        opacity: 5;
+        transform: translateX(15px);
+
+    }
+    
+}
+
+
+.cup-background{
+    background-color: #F0EAE5;
+    border-radius: 60px;
+    
+}
+
+
+.main__box{
+    width: 100vw;
+    background-color: #4F2916;
+    height: 100vh;
+
+    .border__img{
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+
+    }
+    .card{
+        width: 50vh;
+        margin: auto;
+        text-align: center;
+        .card-img-top{
+            width: 70px;
+            margin: auto;
+        }
+    }
+}
